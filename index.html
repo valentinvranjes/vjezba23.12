@@ -6,16 +6,41 @@
     <title>Zadatak - obrazac</title>
 </head>
 <body>
-    <form action="">
-        <label for="ime">Ime i prezime*</label>
-    <br/>
+<form name="prijava" action="" method="post" enctype="multipart/form-data" autocomplete="on">
+    <label for="ime">Ime i prezime*</label>
+    <br>
         <input id="ime" type="text" name="ime" required placeholder="Vaše ime i prezime">
-    </form>
-    <br/>
-    <form action="">
+    <br>
         <label for="e-mail">E-mail adresa*</label>
     <br>
-        <input id="e-mail" type="text" name="e-mail" required placeholder="E-mail adresa">
-    </form>
+        <input id="e-mail" type="text" name="e-mail" placeholder="E-mail adresa" required>
+    <br>
+        <label for="broj telefona">Kontakt broj telefona</label>
+    <br>
+        <input id="broj telefona" type="text" name="broj telefona"placeholder="Broj telefona">
+    <br>
+        <label for="datum">Kontakt broj telefona</label>
+    <br>
+        <input id="datum" type="date" name="datum"placeholder="required">
+    <br>
+        <h1>Koje jezike govorite</h1>
+                Engleski <input type="checkbox" name="voce" value="Engleski">
+                Talijanski <input type="checkbox" name="voce" value="Talijanski">
+                Njemački <input type="checkbox" name="voce" value="Njemački">
+                Francuski <input type="checkbox" name="voce" value="Francuski">
+                Španjolski <input type="checkbox" name="voce" value="Španjolski">
+    <br>
+        <h1>Da li ste do sada koristili usluge naše tvrtke?</h1>
+        <input type="radio" name="opcija" value="Da">muško
+        <br/>
+        <input type="radio" name="opcija" value="Ne">žensko
+    <br/>
+        <label for="cv">Priložite životopis</label>
+    </br>
+        <input id="cv" name="cv" type="file" required>
+    </br>
+        <input name="reset_btn" type="reset" value="Poništi">
+        <input name="submit_btn" type="submit" value="Prijavi se">
+</form>
 </body>
 </html>
